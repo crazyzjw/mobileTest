@@ -40,7 +40,6 @@ class MainActivity : FragmentActivity() {
             }.attach()
 
         }
-
     }
     override fun onResume() {
         super.onResume()
