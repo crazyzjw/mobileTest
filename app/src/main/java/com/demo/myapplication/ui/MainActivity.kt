@@ -16,6 +16,13 @@ import com.demo.myapplication.databinding.ActivityMainBinding
 import com.demo.myapplication.service.DataService
 import com.demo.myapplication.utils.LogUtil
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import kotlin.random.Random
 
 class MainActivity : FragmentActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -100,4 +107,5 @@ class MainActivity : FragmentActivity() {
         }
 
     }
+
 }
